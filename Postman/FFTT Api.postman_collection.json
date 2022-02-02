@@ -1,0 +1,1178 @@
+{
+	"info": {
+		"_postman_id": "3cb6eac6-b6d5-44e2-828c-98687bda1174",
+		"name": "FFTT Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "xml_initialisation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_initialisation.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_initialisation.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_club_dep2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_club_dep2.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&dep=78",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_club_dep2.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "dep",
+							"value": "78"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_club_b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_club_b.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&dep=78",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_club_b.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "dep",
+							"value": "78"
+						},
+						{
+							"key": "ville",
+							"value": "MONTF",
+							"disabled": true
+						},
+						{
+							"key": "numero",
+							"value": "08781094",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "78490",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_club_detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_club_detail.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&club=08781094&idequipe=0",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_club_detail.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "club",
+							"value": "08781094"
+						},
+						{
+							"key": "idequipe",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_organisme",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_organisme.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&type=D&pere=0",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_organisme.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "type",
+							"value": "D"
+						},
+						{
+							"key": "pere",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_epreuve",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_epreuve.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&organisme=82&type=I",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_epreuve.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "organisme",
+							"value": "82"
+						},
+						{
+							"key": "type",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_division",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_division.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&organisme=82&epreuve=2302&type=I",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_division.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "organisme",
+							"value": "82"
+						},
+						{
+							"key": "epreuve",
+							"value": "2302"
+						},
+						{
+							"key": "type",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_result_equ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_result_equ.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&D1=37274&cx_poule=154815",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_result_equ.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "D1",
+							"value": "37274"
+						},
+						{
+							"key": "action",
+							"value": "classement",
+							"disabled": true
+						},
+						{
+							"key": "cx_poule",
+							"value": "154815"
+						},
+						{
+							"key": "auto",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_rencontre_equ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_rencontre_equ.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&poule=154813|154815",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_rencontre_equ.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "poule",
+							"value": "154813|154815"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_chp_renc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_chp_renc.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&renc_id=606110&is_retour=0&phase=2&res_1=25&res_2=17&equip_1=MONTFORT+TT+US+1&equip_2=SQY+PING+10&equip_id1=8002&equip_id2=9107",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_chp_renc.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "renc_id",
+							"value": "606110"
+						},
+						{
+							"key": "is_retour",
+							"value": "0"
+						},
+						{
+							"key": "phase",
+							"value": "2"
+						},
+						{
+							"key": "res_1",
+							"value": "25"
+						},
+						{
+							"key": "res_2",
+							"value": "17"
+						},
+						{
+							"key": "equip_1",
+							"value": "MONTFORT+TT+US+1"
+						},
+						{
+							"key": "equip_2",
+							"value": "SQY+PING+10"
+						},
+						{
+							"key": "equip_id1",
+							"value": "8002"
+						},
+						{
+							"key": "equip_id2",
+							"value": "9107"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_equipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_equipe.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&numclu=08781094&type=F",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_equipe.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "numclu",
+							"value": "08781094"
+						},
+						{
+							"key": "type",
+							"value": "F"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_result_indiv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_liste_joueur.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&action=poule&epr=2302&res_division=35439",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_liste_joueur.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "action",
+							"value": "poule"
+						},
+						{
+							"key": "epr",
+							"value": "2302"
+						},
+						{
+							"key": "res_division",
+							"value": "35439"
+						},
+						{
+							"key": "cx_tableau",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_res_cla",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_liste_joueur.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&res_division=1030",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_liste_joueur.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "res_division",
+							"value": "1030"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_liste_joueur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_liste_joueur.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&club=08781094",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_liste_joueur.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "club",
+							"value": "08781094"
+						},
+						{
+							"key": "nom",
+							"value": "GO",
+							"disabled": true
+						},
+						{
+							"key": "prenom",
+							"value": "Flo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_liste_joueur_o",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_liste_joueur_o.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155&valid=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_liste_joueur_o.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						},
+						{
+							"key": "club",
+							"value": "08781094",
+							"disabled": true
+						},
+						{
+							"key": "nom",
+							"value": "G",
+							"disabled": true
+						},
+						{
+							"key": "prenom",
+							"value": "Florian",
+							"disabled": true
+						},
+						{
+							"key": "valid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_joueur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_joueur.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_joueur.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_licence",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_licence.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_licence.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_licence_b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_licence_b.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_licence_b.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_licence_c",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_licence_c.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_licence_c.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_partie_mysql",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_partie_mysql.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&licence=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_partie_mysql.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "licence",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_partie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_partie.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&numlic=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_partie.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "numlic",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_new_actu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_new_actu.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_new_actu.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xml_histo_classement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.fftt.com/mobile/pxml/xml_histo_classement.php?serie={{serie}}&tm={{tm}}&tmc={{tmc}}&id={{id}}&numlic=7834155",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fftt",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"pxml",
+						"xml_histo_classement.php"
+					],
+					"query": [
+						{
+							"key": "serie",
+							"value": "{{serie}}"
+						},
+						{
+							"key": "tm",
+							"value": "{{tm}}"
+						},
+						{
+							"key": "tmc",
+							"value": "{{tmc}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "numlic",
+							"value": "7834155"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "serie",
+			"value": ""
+		},
+		{
+			"key": "tm",
+			"value": ""
+		},
+		{
+			"key": "tmc",
+			"value": ""
+		},
+		{
+			"key": "id",
+			"value": ""
+		}
+	]
+}
