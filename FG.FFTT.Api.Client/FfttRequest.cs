@@ -102,23 +102,13 @@ namespace FG.FFTT.Api.Client
         public async Task<T> ExecuteAsync<T>()
         {
             string value = string.Empty;
-            HttpResponseMessage response = default;
-
-            var url = _computeUrl();
 
             try
             {
-                switch (Verb)
-                {
-                    case HttpVerbs.Get:
-                        response = await Client.GetAsync(url);
-                        break;
+                var url = _computeUrl();
+                HttpResponseMessage response = await _tryExecuteAsync<T>(url);
 
-                    default:
-                        throw new ApiException(Resources.NotImplementedHTTPVerbsMessage);
-                }
-
-                return (value = await _readResponseContent(response)).FromXml<T>();
+                return (value = await _readResponseContentAsync(response)).FromXml<T>();
             }
             catch (Exception e)
             {
@@ -129,15 +119,15 @@ namespace FG.FFTT.Api.Client
                     try
                     {
                         throw ApiException.InvalidParameters(value.FromXml<Error>().Message);
-                    } 
+                    }
                     catch (InvalidOperationException)
                     {
                         throw ApiException.Unauthorized(value.FromXml<UnauthorizedAccess>().Message);
                     }
                 }
 
-                // In other cases (e.g.disconnection) we return the error message returned by the server.
-                throw new ApiException(e.InnerException?.Message ?? e.Message);
+                // In case of an unknown error, we return the error message returned by the server.
+                throw new ApiException($"{ e.InnerException?.Message ?? e.Message }: type {e.GetType().Name }");
             }
         }
 
@@ -183,7 +173,39 @@ namespace FG.FFTT.Api.Client
             return Uri.EscapeUriString(sb.ToString());
         }
 
-        private async Task<string> _readResponseContent(HttpResponseMessage response)
+        private async Task<HttpResponseMessage> _tryExecuteAsync<T>(string url)
+        {
+            int loop = 0;
+            Exception exception;
+
+            HttpResponseMessage response;
+
+            // When we run our unit tests on the remote Github servers, we sometimes encounter connection or timeout problems with the FFTT webservice.
+            // This is why we re-run each request at least 3 times in case of error before resending it.
+            do
+            {
+                try
+                {
+                    switch (Verb)
+                    {
+                        case HttpVerbs.Get:
+                            response = await Client.GetAsync(url);
+                            break;
+
+                        default:
+                            throw new ApiException(Resources.NotImplementedHTTPVerbsMessage);
+                    }
+
+                    return response;
+                }
+                catch (Exception e) { exception = e; }
+            }
+            while (++loop < 3);
+
+            throw exception;
+        }
+
+        private async Task<string> _readResponseContentAsync(HttpResponseMessage response)
         {
             string value = await response.Content.ReadAsStringAsync();
 

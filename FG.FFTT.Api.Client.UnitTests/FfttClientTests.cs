@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
@@ -19,7 +20,11 @@ namespace FG.FFTT.Api.Client.UnitTests
     {
         #region private fields
 
-        FfttCredentials _credentials = new FfttCredentials("XXXXX", "XXXXXXXXXX", "XXXXXXXXXXXXXXX");
+        FfttCredentials _credentials = new FfttCredentials(
+            Environment.GetEnvironmentVariable("APP_ID"),
+            Environment.GetEnvironmentVariable("APP_PASSWORD"),
+            Environment.GetEnvironmentVariable("APP_SERIAL_NUMBER")
+        );
 
         #endregion private fields
 
