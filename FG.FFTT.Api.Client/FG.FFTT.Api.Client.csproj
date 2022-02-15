@@ -10,7 +10,7 @@
     <Product>FFTT.Api.Client</Product>
     <Description>C# API client for the French Table Tennis Federation</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/FlGoldschmitt/FFTT.Api.Client</PackageProjectUrl>
     <RepositoryUrl>https://github.com/FlGoldschmitt/FFTT.Api.Client</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -22,6 +22,7 @@
     <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
